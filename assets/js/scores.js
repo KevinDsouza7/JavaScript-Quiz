@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Display highscores
         highscores.forEach((score, index) => {
             const listItem = document.createElement("li");
-            listItem.textContent = `${index + 1}. ${score.initials} - ${score.score}`;
+            listItem.textContent = `${score.initials} - ${score.score}`;
             highscoresList.appendChild(listItem);
         });
     }
