@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     clearButton.addEventListener("click", clearHighscores);
   
     function displayHighscores() {
-        // Retrieve highscores from local storage or any other storage mechanism
+       
         const highscores = getHighscores();
   
         // Clear previous highscores
@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function clearHighscores() {
         // Clear highscores from local storage
         localStorage.removeItem("highScores"); 
-        // Update the display
         displayHighscores();
     }
   
     function getHighscores() {
-        // Retrieve highscores from local storage 
-        return JSON.parse(localStorage.getItem("highScores"));
+       
+        return JSON.parse(localStorage.getItem("highScores")) || [];
     }
+    
   
     
     displayHighscores();
