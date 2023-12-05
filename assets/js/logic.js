@@ -1,4 +1,4 @@
-
+// Import questions and highScores
 var questions = require('./questions');
 var highScores = require('./highscores');
 
@@ -30,6 +30,18 @@ function startQuiz() {
     questionsContainer.classList.remove('hide');
     // Start the timer
     startTimer();
-    // Display the first question
+    // Display the question
     showQuestion();
+  }
+  function startTimer() {
+    let time = 60; // Set the initial time in seconds
+  
+    timer = setInterval(() => {
+      timerDisplay.textContent = time;
+      time--;
+  
+      if (time < 0) {
+        endQuiz();
+      }
+    }, 1000);
   }
