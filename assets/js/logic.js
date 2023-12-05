@@ -1,32 +1,18 @@
 const questions = [
     {
       question: "Which symbol is used for comments in JavaScript?",
-      choices: [
-        { text: "--", correct: false },
-        { text: "/* */", correct: false },
-        { text: "//", correct: true },
-        { text: "#", correct: false },
-      ],
+      choices: ["--", "/* */","//", "#", ],
       correctAnswer: "//"
     },
     {
       question: "Which keyword is used to declare a variable in JavaScript?",
-      choices: [
-        { text: "var", correct: true },
-        { text: "let", correct: false },
-        { text: "const", correct: false },
-        { text: "variable", correct: false },
-      ],
-      correctAnswer: "var"
+      choices: 
+        ["var","let", "const", "variable"],
+        correctAnswer: "var"
     },
     {
       question: "What does the 'DOM' stand for?",
-      choices: [
-        { text: "Data Object Model", correct: false },
-        { text: "Document Oriented Model", correct: false },
-        { text: "Data Oriented Model", correct: false },
-        { text: "Document Object Model", correct: true },
-      ],
+      choices: [ "Data Object Model", "Document Oriented Model", "Data Oriented Model","Document Object Model"],
       correctAnswer: "Document Object Model"
     },
     {
