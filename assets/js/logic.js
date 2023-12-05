@@ -17,12 +17,7 @@ const questions = [
     },
     {
       question: "What is the result of 5 + '5' in JavaScript?",
-      choices: [
-        { text: "10", correct: false },
-        { text: "55", correct: true },
-        { text: "5", correct: false },
-        { text: "Error", correct: false },
-      ],
+      choices: ["10","55","5","Error",],
       correctAnswer: "55"
     },
    
